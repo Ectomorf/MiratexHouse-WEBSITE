@@ -26,19 +26,92 @@ input,button,textarea{font-family:inherit;}
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
 button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
+a, a:visited{text-decoration: none;color:#161616}
+a:hover{text-decoration: none;color:#161616}
 ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
 body {
-    max-width: 1200px;
-    margin: 0 400px;
 }
 
 header {
     display: flex;
-    width: 1200px;
+	height: 55.5px;
+	padding-left:200px;
+	align-items: center;
+	border-bottom: 1px solid #161616;
+}
+
+.logo-block , .logo-text-content {
+	display: flex;
+}
+
+.logo-text-content {
+	flex-direction: column;
+	border-left: 1px solid #161616;
+	margin-left: 12px;
+	padding-left: 11px;
+}
+
+.logo-text-content h2 {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 17px;
+	letter-spacing: 0em;
+	text-align: left;
+	text-transform: lowercase;
+}
+
+nav {
+	margin: 0 282px 0px 100px;
+}
+
+nav a {
+	color: #161616;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 17px;
+	letter-spacing: 0em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.catalog {
+	margin: 0 21px 0 0;
+}
+
+.contacts {
+	margin: 0 138px 0 0;
+}
+
+.Earn-with-us {
+	margin: 0 382px 0 0;
+}
+
+.share-link-block, .login-block {
+	display: flex;
+	align-items: center;
+	padding-left: 31.5px;
+	height: 18px;
+	background-repeat: no-repeat;
+}
+
+.share-link-block {
+	position: relative;
+	margin-right: 43px;
+	background-image: url('images/link-share.png');
+}
+
+.login-block {
+	background-image: url('images/log_out.png')
+}
+
+.share-link-text, .login-text {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 17px;
+	letter-spacing: 0em;
+	text-align: left;
 }
