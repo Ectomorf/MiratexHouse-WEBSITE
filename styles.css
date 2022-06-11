@@ -1,43 +1,4 @@
-/*Обнуление*/
-*{
-	padding: 0;
-	margin: 0;
-	border: 0;
-	box-sizing: border-box;
-}
-*,*:before,*:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-nav,footer,header,aside{display: block;}
-html,body{
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-}
-input,button,textarea{font-family:inherit;}
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;color:#161616}
-a:hover{text-decoration: none;color:#161616}
-ul li{list-style: none;}
-img{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-/*--------------------*/
-
 body {
-	max-width: 1600px;
-	height: 5000px;
-	margin: 0 auto;
 	font-family: 'Ubuntu', sans-serif;
 }
 
@@ -48,8 +9,13 @@ body {
 header {
     display: flex;
 	height: 55.5px;
+	justify-content: center;
 	align-items: center;
 	border-bottom: 1.5px solid #161616;
+}
+
+header a:visited {
+	color: #161616;
 }
 
 .logo-block , .logo-text-content {
@@ -213,12 +179,6 @@ nav a {
 	border: 1px solid #1D1D1D;
 }
 
-.column-button_icon {
-	background-image: url('images/info/column-button-icon.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
 .column-button_text {
 	font-size: 18px;
 	font-weight: 500;
@@ -250,6 +210,10 @@ nav a {
 	text-align: left;
 }
 
+.Earn-with-us__button {
+	color: #161616;
+}
+
 .catalog-block {
 	margin: 143px 0 0 0;
 }
@@ -258,15 +222,37 @@ nav a {
 	margin: 30px 0 30px 0;
 }
 
-.catalog-download-button {
+.catalog-list__item {
+	color: #DADADA;
+}
+
+.catalog-list__item.active, .catalog-list__item:hover {
+	color: #161616;
+	transition: 0.4s linear
+}
+
+.catalog-list__item:not(:hover) {
+	transition: 0.5s;
+}
+
+.catalog-download-button{
 	margin: 70px 0 0 0;
 }
 
 .catalog {
-	height: 100px;
+	position: relative;
 	border-top: 1px solid #161616;
 	border-bottom: 1px solid #161616;
 	margin: 140px 0 70px 0;
+	padding: 40px 0 70px 0;
+}
+
+.item-1 .catalog_column-left {
+	padding-right: 98px;
+}
+
+.item-1 .catalog_column-right .catalog_item-text{
+	margin: 157px 200px 0 0;
 }
 
 .catalog-buttons {
@@ -283,45 +269,107 @@ nav a {
 	margin: 0 80px 0 0;
 }
 
-.prev {
-	background-image: url('images/catalog/catalog-button-icon/prev.png');
+footer {
+	display: flex;
+	position: relative;
+	margin: 0px 0 0 0;
+	padding: 62px 200px 0 200px;
+	background-color: #161616;
+	color: #FFFFFF;
 }
 
-.next {
-	background-image: url('images/catalog/catalog-button-icon/next.png');
+footer .logo-block {
+	position: absolute;
+	left: 200;
+	top: 62;
+	z-index: 3;
+	color: #FFFFFF;
 }
 
+footer .logo-text-content {
+	border-color: #FFFFFF;
+}
 
+.footer-text {
+	width: 400px;
+	margin: 70px 145px 80px 54px;
+}
 
-
-.title {
-	font-size: 64px;
-	font-weight: 500;
-	line-height: 76px;
+.footer-row {
+	display: flex;
+	margin: 8px 0 0 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 17px;
 	letter-spacing: 0em;
 	text-align: left;
+}
+
+.footer__column {
+	width: 160px;
+	margin: 0 35px 0 0;
+}
+
+.column__title {
+	display: flex;
+	align-items: center;
+	margin: 0 0 40px 0;
+}
+
+.column__title svg {
+	margin: 0 17px 0 0;
+}
+
+.footer__column ul li{
+	margin: 0 0 17px 0;
+}
+
+.document-block {
+	display: flex;
+	border-top: 1px solid #ffffff;
+	padding: 17px 200px 17px 255px;
+	background-color: #161616;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 17px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.document-block a {
+	color: #FFFFFF;
 	text-transform: uppercase;
 }
+
+.document-block_text {
+	margin: 0 270px 0 0;
+}
+
+.document-block-links a:not(:last-child) {
+	margin: 0 34.3px 0 0;
+}
+
 
 .block {
 	margin-left: 200px;
 }
 
-.button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 60px;
-	width: 400px;
-	border: 1px solid #161616;
+.button:hover, .column-button_icon:hover, .catalog-button:hover {
+	background: #006B94;
+	color: #FFFFFF;
+	stroke: #FFFFFF;
+	transition: 0.3s linear;
 }
 
-.button-text {
-	font-size: 14px;
-	font-weight: 600;
-	line-height: 17px;
-	text-align: center;
-	text-transform: uppercase;	
+.button:not(:hover), .catalog-button:not(:hover), .column-button_icon:not(:hover) {
+	transition: 0.2s linear;
+	stroke: black;
+}
+
+.column-button_icon svg path,  .catalog-button svg path {
+	stroke: inherit;
+    transition: 0.3s linear;
 }
 
 .catalog-list__item {

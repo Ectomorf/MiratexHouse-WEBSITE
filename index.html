@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,9 +14,10 @@
 </head>
 
 <body>
-    <div class="wrapper">
 
-        <header>
+    <header>
+
+        <div class="container row">
 
             <a href="#" class="logo-block">
 
@@ -31,17 +34,17 @@
                 </div>    
                     
             </a>
-
+    
             <nav>
-
+    
                 <a href="#" class="catalog-link">Каталог</a>
                 <a href="#" class="contacts-link">Контакты</a>
                 <a href="#" class="Earn-with-us-link">Зарабатывай с нами</a>
-
+    
             </nav>
-
+    
             <div class="share-block">
-
+    
                 <a href="#" class="share-link-block">
                     <div class="share-link-text">Поделиться</div>
                 </a>
@@ -77,12 +80,50 @@
                     </a>
                 </div>
             </div>
-
+    
             <a href="#" class="login-block">
                 <div class="login-text">Войти</div>
             </a>
 
-        </header>
+        </div>
+
+    </header>
+    
+
+    <div class="container">
+
+        <div class="scrollbar" style="top: 55.5px;">
+            <div class="scrollbar__cell"><div class="scrollbar__thumb blink"></div></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+            <div class="scrollbar__cell"></div>
+        </div>
 
 
         <div class="main block">
@@ -121,7 +162,11 @@
     
                     <div class="column-button active">
     
-                        <a href="#" class="column-button_icon"></a>
+                        <div class="column-button_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M21.0542 10.3068L11.0542 20M11.0542 20L1.0542 10.3067M11.0542 20L11.0542 1.47023e-06" stroke="black" stroke-width="2"/>
+                                </svg>
+                            </div>
 
                         <div class="column-button_text">Дополнительное место <br>для дополнительных опций</div>
     
@@ -188,7 +233,11 @@
     
                     <div class="column-button active">
     
-                        <a href="#" class="column-button_icon"></a>
+                        <div class="column-button_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M21.0542 10.3068L11.0542 20M11.0542 20L1.0542 10.3067M11.0542 20L11.0542 1.47023e-06" stroke="black" stroke-width="2"/>
+                                </svg>
+                            </div>
                         <div class="column-button_text">Доход от аренды для <br>мгновенного возврата вложений</div>
     
                     </div>
@@ -280,7 +329,7 @@
             <h2 class="catalog-block-title title">Каталог</h2>
 
             <div class="catalog-list-container">
-                <a href="#" class="catalog-list__item">Model Home 15</a>
+                <a href="#" class="catalog-list__item active">Model Home 15</a>
                 <a href="#" class="catalog-list__item">Model Home 30</a>
                 <a href="#" class="catalog-list__item">Model Home lux</a>
                 <a href="#" class="catalog-list__item">Model cafe l15</a>
@@ -294,28 +343,129 @@
                 <a href="#" class="catalog-list__item">Model wc</a>   
             </div>       
 
-            <a href="#" class="catalog-download-button button">
+            <div class="catalog-download-button button">
                 <div class="button-text">скачать каталог</div>
-            </a>
+            </div>
 
             <div class="catalog">
-
-                <div class="catalog__item">
-
-                </div>
 
             </div>
 
             <div class="catalog-buttons">
 
-                <a href="#" class="catalog-button prev"></a>
+                <div class="catalog-button prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                        <path d="M10.6933 20.5527L0.999999 10.5527M0.999999 10.5527L10.6932 0.552735M0.999999 10.5527L21 10.5527" stroke="black"/>
+                        </svg>
+                </div>
 
-                <a href="#" class="catalog-button next"></a>
+                <div class="catalog-button next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
+                        <path d="M10.3067 0.677734L20 10.6777M20 10.6777L10.3067 20.6777M20 10.6777H0" stroke="black"/>
+                        </svg>
+                </div>
 
             </div>
     
         </div>
 
+    </div>
+
+
+    <footer>
+            
+        <a href="#" class="logo-block">
+
+            <div class="logo">
+                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.38638 18.7148C3.83978 18.7148 4.20733 19.0824 4.20733 19.5358L4.20734 30.8581H26.8519V19.5358C26.8519 19.0824 27.2195 18.7148 27.6729 18.7148C28.1263 18.7148 28.4938 19.0824 28.4938 19.5358V31.679C28.4938 32.1324 28.1263 32.5 27.6729 32.5H3.38639C2.93299 32.5 2.56543 32.1324 2.56543 31.679L2.56543 19.5358C2.56543 19.0824 2.93298 18.7148 3.38638 18.7148Z" fill="#FFFFFF"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2912 0.740451C15.6118 0.41985 16.1316 0.41985 16.4522 0.740451L31.503 15.7912C31.7378 16.026 31.808 16.3791 31.681 16.6859C31.5539 16.9927 31.2545 17.1927 30.9225 17.1927H12.5879V27.4375H18.8135V20.2712H15.8717C15.4183 20.2712 15.0508 19.9037 15.0508 19.4503C15.0508 18.9969 15.4183 18.6293 15.8717 18.6293H19.6344C20.0878 18.6293 20.4554 18.9969 20.4554 19.4503V28.2584C20.4554 28.7118 20.0878 29.0794 19.6344 29.0794H11.767C11.3136 29.0794 10.946 28.7118 10.946 28.2584V16.3717C10.946 15.9183 11.3136 15.5508 11.767 15.5508H28.9405L15.8717 2.48195L1.40145 16.9522C1.08085 17.2728 0.561053 17.2728 0.240451 16.9522C-0.0801504 16.6316 -0.0801504 16.1118 0.240451 15.7912L15.2912 0.740451Z" fill="#FFFFFF"/>
+                    </svg>
+            </div>
+
+            <div class="logo-text-content">
+                <h2>Miratex</h2>
+                <h2>house</h2>
+            </div>    
+                
+        </a>
+
+
+            <div class="footer-text">
+                Наша команда берет на себя все: от разработки идеи и до реализации. Функциональность и традиции — это то, что мы внедряем в каждый наш проект.
+            </div>
+
+            <div class="footer-row">
+
+                <div class="footer__column">
+
+                    <div class="column__title">
+                        <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="0.714844" x2="32" y2="0.714844" stroke="white"/>
+                            </svg>
+                        <h5>Звоните</h5>
+                        </div>
+
+                    <ul class="footer-tel">
+
+                        <li>GB +4420 45770896</li>
+                        <li>RU +7 499 3227009</li>
+                        <li>PL +48 784 806484</li>
+
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+
+                    <div class="column__title">
+                        <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="0.714844" x2="32" y2="0.714844" stroke="white"/>
+                            </svg>
+                        <h5>Звоните</h5>
+                        </div>
+
+                    <ul class="footer-mail">
+
+                        <li>GB +4420 45770896</li>
+                        <li>RU +7 499 3227009</li>
+                        <li>PL +48 784 806484</li>
+
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+
+                    <div class="column__title">
+                        <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="0.714844" x2="32" y2="0.714844" stroke="white"/>
+                            </svg>
+                        <h5>Звоните</h5>
+                        </div>
+
+                    <ul class="footer-adress">
+
+                        <li>GB +4420 45770896</li>
+                        <li>RU +7 499 3227009</li>
+                        <li>PL +48 784 806484</li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+    </footer>
+
+    <div class="document-block">
+
+        <div class="document-block_text">© MiratexHouse. all rights reserved</div>
+
+        <div class="document-block-links">
+            <a href="#">Disclaimer</a>
+            <a href="#">Investments risks</a>
+            <a href="#">general loam tearms</a>
+            <a href="#">risk warning</a>
+            <a href="#">terms of use</a>
+        </div>
 
     </div>
 

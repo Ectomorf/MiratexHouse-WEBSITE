@@ -1,0 +1,101 @@
+.row {
+    display: flex;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.scrollbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 36px;
+    height: 100vh;
+    z-index: 4;
+}
+
+.scrollbar__cell {
+    flex: 1;
+    background-repeat: no-repeat;
+    background-position: left
+}
+
+.scrollbar__thumb {
+    width: 36px;
+    height: 36px;
+    background-color: #006B94;
+    border-radius: 50%;
+}
+
+.scrollbar__cell:nth-child(odd) {
+    background-image: url('../MiratexHouse/images/Line_1.svg');
+}
+
+.scrollbar__cell:nth-child(even) {
+    background-image: url('../MiratexHouse/images/Line_2.svg');
+}
+
+.blink {
+    animation-name: blinker;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    animation-duration: 1s;
+    -webkit-animation-name: blinker;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    -webkit-animation-duration: 3s;
+  }
+   
+  @keyframes blinker {
+    from { background-color: #006B94 }
+    to { background-color: #0595ce }
+  }
+   
+  @-webkit-keyframes blinker {
+    from { background-color: #006B94 }
+    to { background-color: ##0595ce }
+  }
+
+.title {
+	font-size: 64px;
+	font-weight: 500;
+	line-height: 76px;
+	letter-spacing: 0em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.block {
+	margin-left: 200px;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	width: 400px;
+	border: 1px solid #161616;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 17px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.button-text {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 17px;
+	text-align: center;
+	text-transform: uppercase;	
+}
